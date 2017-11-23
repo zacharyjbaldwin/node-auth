@@ -1,0 +1,25 @@
+{
+  "name": "auth",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "production": "set NODE_ENV=production&& set MONGO_URI=mongodb://localhost:27017/authtest&& npm start",
+    "test": "nodemon --exec \"node index.js\""
+  },
+  "author": "Zachary J. Baldwin <zacharyjbaldwin@gmail.com> (https://www.github.com/zacharyjbaldwin)",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "chalk": "^2.3.0",
+    "connect-mongo": "^2.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "ip": "^1.1.5",
+    "mongoose": "^4.13.4",
+    "nodemon": "^1.12.1"
+  }
+}

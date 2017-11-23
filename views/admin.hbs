@@ -1,0 +1,14 @@
+<form method="post" action="/admin">
+    <div>
+        <input type="text" name="command" required placeholder="Command to run">
+    </div>
+    <div>
+        <input type="password" name="password" required placeholder="Password">
+    </div>
+    <div>
+        <button type="submit" name="submit">Submit</button>
+    </div>
+    {{#if error}}
+        <span style="color:red">{{error}}</span>
+    {{/if}}
+</form>
